@@ -43,7 +43,7 @@
       ]
     },
     {
-      "contract": "0x01aeabd202e7e36294fe71e9e79cae5f8feb8b4e581ef93d1879e8be579ae4be",
+      "contract": "0x029e5827d2e8720061863a9cef9356477b795482d4a4130d4e5588abcff286fb",
       "start": 81640,
       "abi": "ContractFactory",
       "events": [
