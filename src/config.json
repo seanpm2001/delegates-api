@@ -56,7 +56,7 @@
   ],
   "templates": {
     "Space": {
-      "abi": "GenericERC20Votes",
+      "abi": "Token",
       "events": [
         {
           "name": "DelegateChanged",
