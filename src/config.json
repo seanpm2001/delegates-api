@@ -41,6 +41,32 @@
           "fn": "handleDelegateVotesChanged"
         }
       ]
+    },
+    {
+      "contract": "0x302d332e9aceb184e5f301cb62c85181e7fc3b30559935c5736e987de579f6e",
+      "start": 17960,
+      "abi": "ContractFactory",
+      "events": [
+        {
+          "name": "NewContractDeployed",
+          "fn": "handleSpaceDeployed"
+        }
+      ]
     }
-  ]
+  ],
+  "templates": {
+    "Space": {
+      "abi": "GenericERC20Votes",
+      "events": [
+        {
+          "name": "DelegateChanged",
+          "fn": "handleDelegateChanged"
+        },
+        {
+          "name": "DelegateVotesChanged",
+          "fn": "handleDelegateVotesChanged"
+        }
+      ]
+    }
+  }
 }
