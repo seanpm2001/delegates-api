@@ -55,9 +55,9 @@ export const handleDelegateVotesChanged: starknet.Writer = async ({ event, sourc
 export const handleContractDeployed: starknet.Writer = async ({ blockNumber, event, source, instance }) => {
 
   if (!event) return;
-  const implem_address = event.implementation_address;
+  const classHash = event.class_hash;
 
-  if (implem_address === ERC20VOTES_CLASS_HASH) {
+  if (classHash === ERC20VOTES_CLASS_HASH) {
     await instance.executeTemplate('GenericERC20Votes', {
       contract: event.contract_address,
       start: blockNumber
