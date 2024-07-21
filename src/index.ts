@@ -25,7 +25,7 @@ config.network_node_url = process.env.NETWORK_NODE_URL ?? config.network_node_ur
 
 const indexer = new starknet.StarknetIndexer(writer);
 const checkpoint = new Checkpoint(config, indexer, schema, {
-  logLevel: LogLevel.Info,
+  logLevel: LogLevel.Error,
   resetOnConfigChange: true,
   prettifyLogs: process.env.NODE_ENV !== 'production',
   abis: { Token, Token2 }
@@ -58,8 +58,8 @@ async function run() {
     await sleep(PRODUCTION_INDEXER_DELAY);
   }
 
-  // await checkpoint.reset();
-  // await checkpoint.resetMetadata();
+  await checkpoint.reset();
+  await checkpoint.resetMetadata();
   console.log('Checkpoint ready');
 
   await checkpoint.start();

@@ -31,6 +31,71 @@
       "contract": "0x00c530f2c0aa4c16a0806365b0898499fba372e5df7a7172dc6fe9ba777e8007",
       "start": 644053,
       "abi": "Token2",
+      "group": "0x07c251045154318a2376a3bb65be47d3c90df1740d8e35c9b9d943aa3f240e50",
+      "events": [
+        {
+          "name": "DelegateChanged",
+          "fn": "handleDelegateChanged"
+        },
+        {
+          "name": "DelegateVotesChanged",
+          "fn": "handleDelegateVotesChanged"
+        }
+      ]
+    },
+    {
+      "contract": "0x02589fc11f60f21af6a1dda3aeb7a44305c552928af122f2834d1c3b1a7aa626",
+      "start": 650993,
+      "abi": "Token2",
+      "group": "0x07c251045154318a2376a3bb65be47d3c90df1740d8e35c9b9d943aa3f240e50",
+      "events": [
+        {
+          "name": "DelegateChanged",
+          "fn": "handleDelegateChanged"
+        },
+        {
+          "name": "DelegateVotesChanged",
+          "fn": "handleDelegateVotesChanged"
+        }
+      ]
+    },
+    {
+      "contract": "0x046ab56ec0c6a6d42384251c97e9331aa75eb693e05ed8823e2df4de5713e9a4",
+      "start": 650993,
+      "abi": "Token2",
+      "group": "0x07c251045154318a2376a3bb65be47d3c90df1740d8e35c9b9d943aa3f240e50",
+      "events": [
+        {
+          "name": "DelegateChanged",
+          "fn": "handleDelegateChanged"
+        },
+        {
+          "name": "DelegateVotesChanged",
+          "fn": "handleDelegateVotesChanged"
+        }
+      ]
+    },
+    {
+      "contract": "0x02b674ffda238279de5550d6f996bf717228d316555f07a77ef0a082d925b782",
+      "start": 650989,
+      "abi": "Token2",
+      "group": "0x07c251045154318a2376a3bb65be47d3c90df1740d8e35c9b9d943aa3f240e50",
+      "events": [
+        {
+          "name": "DelegateChanged",
+          "fn": "handleDelegateChanged"
+        },
+        {
+          "name": "DelegateVotesChanged",
+          "fn": "handleDelegateVotesChanged"
+        }
+      ]
+    },
+    {
+      "contract": "0x06f8ad459c712873993e9ffb9013a469248343c3d361e4d91a8cac6f98575834",
+      "start": 650991,
+      "abi": "Token2",
+      "group": "0x07c251045154318a2376a3bb65be47d3c90df1740d8e35c9b9d943aa3f240e50",
       "events": [
         {
           "name": "DelegateChanged",

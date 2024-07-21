@@ -7,6 +7,13 @@ export const BIGINT_ZERO = BigInt(0);
 
 export const ZERO_ADDRESS = validateAndParseAddress('0x0');
 
+export function getGovernanceIds(source: any) {
+  const ids = [source?.contract ?? ''];
+  if (source?.group) ids.push(source.group);
+
+  return ids;
+}
+
 export async function getDelegate(id: string, governanceId: string): Promise<Delegate> {
   let delegate = await Delegate.loadEntity(`${governanceId}/${id}`);
 
