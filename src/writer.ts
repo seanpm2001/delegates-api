@@ -4,7 +4,7 @@ import { formatUnits } from '@ethersproject/units';
 import { Delegate, Governance } from '../.checkpoint/models';
 import { BIGINT_ZERO, DECIMALS, getGovernance, getDelegate } from './utils';
 
-const ERC20VOTES_CLASS_HASH = '0x07e69a995a319a143683602b7a9f21bd94e1371a5b0636218e453a3e5ebaeb40';
+const ERC20VOTES_CLASS_HASH = '0x07e69a995a319a143683602b7a9f21bd94e1371a5b0636218e453a3e5ebaeb40'; // Address on mainnet
 
 export const handleDelegateChanged: starknet.Writer = async ({ event, source }) => {
   if (!event) return;
